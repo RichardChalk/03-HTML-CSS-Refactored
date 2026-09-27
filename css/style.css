@@ -1,0 +1,95 @@
+/* Padding och kantlinjer räknas in i elementens bredd och höjd. */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f5f0e8;
+  color: #333;
+
+  /* Sidan blir minst lika hög som webbläsarens visningsyta. */
+  min-height: 100vh;
+
+  /* Placerar header, main och footer under varandra. */
+  display: flex;
+  flex-direction: column;
+
+  /* Centrerar text och inline-innehåll, tex. länken, horisontellt. */
+  text-align: center;
+}
+
+header {
+  background-color: #284b63;
+  color: white;
+  padding: 30px;
+}
+
+main {
+  /* Fyller det lediga utrymmet så att footer hamnar längst ned
+     när innehållet är kort. */
+  flex: 1;
+
+  /* Använder hela tillgängliga bredden, men högst 900px. */
+  width: 100%;
+  max-width: 900px;
+
+  /* Centrerar själva main-elementet horisontellt. */
+  margin: 0 auto;
+  padding: 20px;
+}
+
+section {
+  margin-bottom: 30px;
+}
+
+.cards {
+  display: flex;
+  gap: 20px;
+
+  /* Centrerar korten horisontellt i deras behållare. */
+  justify-content: center;
+
+  /* Låter korten hamna på nästa rad om skärmen är smal. */
+  flex-wrap: wrap;
+}
+
+.card {
+  background-color: white;
+  width: 250px;
+
+  /* Hindrar kortet från att bli bredare än sin behållare. */
+  max-width: 100%;
+
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+
+  /* Behåller bildens proportioner när bredden ändras. */
+  height: auto;
+
+  /* Auto på vänster och höger sida centrerar bilden.
+     20px ger utrymme under bilden. */
+  margin: 0 auto 20px;
+}
+
+.button {
+  display: inline-block;
+  background-color: #284b63;
+  color: white;
+  padding: 12px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+footer {
+  background-color: #284b63;
+  color: white;
+  padding: 15px;
+}

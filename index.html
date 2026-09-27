@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kafé Solros</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <!-- Fel 1: Rubriken avslutades med </h2>, men måste avslutas med </h1>. -->
+      <h1>Kafé Solros</h1>
+      <p>Kaffe och fika i en mysig miljö.</p>
+    </header>
+
+    <main>
+      <section id="menu">
+        <h2>Vår meny</h2>
+
+        <div class="cards">
+          <article class="card">
+            <h3>Kaffe</h3>
+            <p>Nybryggt kaffe för 35 kr.</p>
+          </article>
+
+          <article class="card">
+            <h3>Kanelbulle</h3>
+            <p>En nybakad bulle för 30 kr.</p>
+          </article>
+        </div>
+      </section>
+
+      <!-- Fel 2: Båda sektionerna hade id="menu". Varje id måste vara unikt på sidan. -->
+      <section id="visit">
+        <h2>Besök oss</h2>
+        <p>Vi har öppet varje dag mellan 09 och 17.</p>
+
+        <!-- Fel 3a: Attributet hette scr. Det ska heta src för att ange bildens sökväg. -->
+        <!-- Fel 3b: Det fanns ingen bild!! -->
+        <img src="/images/cafe.jpg" alt="Kaféets uteservering" />
+
+        <a class="button" href="mailto:info@example.com">Kontakta oss</a>
+      </section>
+    </main>
+
+    <footer>
+      <p>Välkommen till Kafé Solros!</p>
+    </footer>
+  </body>
+</html>
