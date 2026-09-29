@@ -29,6 +29,9 @@ header {
 main {
   /* Fyller det lediga utrymmet så att footer hamnar längst ned
      när innehållet är kort. */
+
+  /* flex: 1; gör att ett element i en flex-container får växa och fylla ledigt utrymme, 
+     men också krympa när det behövs. */
   flex: 1;
 
   /* Använder hela tillgängliga bredden, men högst 900px. */
